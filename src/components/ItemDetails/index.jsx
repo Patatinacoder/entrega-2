@@ -5,11 +5,11 @@ import { get } from "../../utils/httpClient";
 import styles from "./MovieDetails.module.css";
 
 export function MovieDetails() {
-  const { movieId } = useParams();
+  const {movieId} = useParams();
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    get("/movie/" + movieId).then((data) => {
+    get("detail/:id" + movieId).then((data) => {
       setMovie(data);
     });
   }, [movieId]);
