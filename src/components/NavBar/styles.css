@@ -23,10 +23,5 @@ a{
     cursor:pointer;
 }
 
-li:hover{
-    transform:scale(1.1);
-    transition: .50s;
-}
-
 
     
