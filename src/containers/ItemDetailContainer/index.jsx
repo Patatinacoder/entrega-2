@@ -14,10 +14,7 @@ import { useParams } from "react-router-dom";
                     resolve(products);
                 })});
 
-                promesa.then((data) =>
-                setMovie(data.find((product) => product.id === parseInt(id)))
-                );
-        }, [id];);
+                
           
 
 
