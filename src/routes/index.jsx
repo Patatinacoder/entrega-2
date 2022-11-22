@@ -4,8 +4,7 @@
    import { createBrowserRouter, RouterProvider } from "react-router-dom";
    import Root from "../components/Root";
    import ItemListContainer from "../containers/ItemListContainer";
-   import ItemDetailContainer from "../containers/ItemDetailContainer/index";
-   
+import { ItemDetailContainer } from "../containers/ItemDetailContainer";   
    const router = createBrowserRouter([
        {
            path: "/",
