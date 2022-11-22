@@ -1,25 +1,23 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget";
-import './styles.css';
+import "./styles.css";
 
 const NavBar = () => {
-
     return (
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to="/category/Movies">Movies</Link>
+                <Link to='/category/Movies'>Movies</Link>
+                <Link to='/category/Series'>Series</Link>
+                <Link to='/category/Documentales'>Documentales</Link>
             </li>
-            
-            
-            
-            
+
             <CartWidget />
         </ul>
-
     );
 };
 
