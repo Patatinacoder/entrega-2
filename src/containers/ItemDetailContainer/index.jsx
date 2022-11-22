@@ -1,13 +1,27 @@
 import MovieDetails from "../../components/ItemDetails";
-// import MovieDetails from "../../components/ItemDetails";
-export function ItemDetailContainer()  {
+import products from "../../data/products";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-   
 
-    return (
+
+          export function ItemDetailContainer() {
+            const [movie, setMovie] = useState({});
+            const { id } = useParams();
         
-    <MovieDetails/>)
+            useEffect(() => {
+                const promesa = new Promise((resolve, reject) => {
+                    resolve(products);
+                })});
 
-};
+                promesa.then((data) =>
+                setMovie(data.find((product) => product.id === parseInt(id)))
+                );
+        }, [id];);
+          
 
-export default ItemDetailContainer;
+
+
+
+
+          }
