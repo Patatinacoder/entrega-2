@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Ad from "../../components/Ad";
 import MovieCard from "../../components/Item";
 import products from "../../data/products";
+// import { ItemDetailContainer } from "../ItemDetailContainer";
 import styles from "./MoviesGrid.module.css";
 
 
@@ -34,9 +34,6 @@ const {categoryId} = useParams();
         </ul>
     );
             }
-<Ad>
-    <h1>Este es un anuncio molesto</h1>
-    <button>cerrar anuncio</button>
-</Ad>;
+
 
 export default MoviesGrid;

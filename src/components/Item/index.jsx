@@ -6,9 +6,7 @@ export function MovieCard({ movie }) {
             <Link exact path to={`/detail/${movie.id}`}>
                 <div>{movie.name}</div>
                 <div>{movie.category}</div>
-                <div>{movie.description}</div>
-                <div>{movie.id}</div>
-                <div>{movie.stock}</div>
+               
             </Link>
         </li>
     );

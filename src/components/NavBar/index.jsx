@@ -13,7 +13,7 @@ const NavBar = () => {
             <li>
                 <Link to='/category/Movies'>Movies</Link>
                 <Link to='/category/Series'>Series</Link>
-                <Link to='/category/Documentales'>Documentales</Link>
+                <Link to='/category/Documentals'>Documentals</Link>
             </li>
 
             <CartWidget />
