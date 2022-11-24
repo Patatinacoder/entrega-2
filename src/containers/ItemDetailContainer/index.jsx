@@ -41,3 +41,4 @@ import styles from "./ItemDetail.modules.css"
 
           }
           //probando git 
+          //segunda prueba 
