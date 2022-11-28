@@ -15,8 +15,8 @@ import styles from "./ItemDetail.modules.css"
                     resolve(products);
                 });
                 promesa
-                // eslint-disable-next-line eqeqeq
-                .then((result)=>{setMovie(result.find(movie=>movie.id==id))})
+                
+                .then((result)=>{setMovie(result.find(movie=>movie.id ==id))})
                 .catch((error)=>{console.log('Error');})
             },[id]);
             return (

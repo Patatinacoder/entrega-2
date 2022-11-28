@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import MovieCard from "../../components/Item";
 import products from "../../data/products";
-// import { ItemDetailContainer } from "../ItemDetailContainer";
+//import { ItemDetailContainer } from "../ItemDetailContainer";
 import styles from "./MoviesGrid.module.css";
 
 
