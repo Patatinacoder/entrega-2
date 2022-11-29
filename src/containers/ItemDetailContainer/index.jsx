@@ -1,7 +1,7 @@
 // import MovieDetails from "../../components/ItemDetails";
 import products from "../../data/products";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+ import {  useParams } from "react-router-dom";
 import styles from "./ItemDetail.modules.css"
 
 
@@ -20,18 +20,22 @@ import styles from "./ItemDetail.modules.css"
                 .catch((error)=>{console.log('Error');})
             },[id]);
             return (
+               
+
                 <div className={styles.detailsContainer}>
-                    <img  src={movie.poster_path} alt="" />
-                   <div>     
+                    
                 <h1 className={styles.movieDetails}>{movie.name}</h1>
                 <h2 className={styles.movieDetails}>{movie.description}</h2>
                 <h2 className={styles.firstItem}>{movie.stock}</h2>
-</div>
+                </div>
 
+             
                 
 
-                </div>
+              
             )
+            
+            }
 
                 
           
@@ -40,5 +44,4 @@ import styles from "./ItemDetail.modules.css"
 
 
 
-          }
           

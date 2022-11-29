@@ -4,8 +4,16 @@ export function MovieCard({ movie }) {
     return (
         <li className={styles.movieCard}>
             <Link  to={`/detail/${movie.id}`}>
-                <div>{movie.poster_path}</div>
-                <div>{movie.name}</div>
+              
+            <div>
+                    {" "}
+                    <img
+                        src={process.env.PUBLIC_URL + `${movie.poster_path}`}
+                        alt='poster'
+                    />
+                </div>
+                
+                  <div>{movie.name}</div>
                 <div>{movie.category}</div>
                
             </Link>

@@ -32,6 +32,7 @@ const {categoryId} = useParams();
                 <MovieCard key={movie.id} movie={movie} />
             ))}
         </ul>
+        
     );
             }
 
