@@ -16,13 +16,14 @@ import styles from "./ItemDetail.modules.css"
                 });
                 promesa
                 
-                .then((result)=>{setMovie(result.find(movie=>movie.id ==id))})
+                .then((result)=>{setMovie(result.find(movie=> movie.id === parseInt(id) ))})
                 .catch((error)=>{console.log('Error');})
             },[id]);
             return (
                 <div className={styles.detailsContainer}>
                     <img  src={movie.poster_path} alt="" />
-                    <div className={styles.col}>                <h1 className={styles.movieDetails}>{movie.name}</h1>
+                   <div>     
+                <h1 className={styles.movieDetails}>{movie.name}</h1>
                 <h2 className={styles.movieDetails}>{movie.description}</h2>
                 <h2 className={styles.firstItem}>{movie.stock}</h2>
 </div>
@@ -40,5 +41,4 @@ import styles from "./ItemDetail.modules.css"
 
 
           }
-          //probando git 
-          //segunda prueba 
+          

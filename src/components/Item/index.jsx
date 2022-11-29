@@ -3,7 +3,8 @@ import styles from "./MovieCard.module.css";
 export function MovieCard({ movie }) {
     return (
         <li className={styles.movieCard}>
-            <Link exact path to={`/detail/${movie.id}`}>
+            <Link  to={`/detail/${movie.id}`}>
+                <div>{movie.poster_path}</div>
                 <div>{movie.name}</div>
                 <div>{movie.category}</div>
                
