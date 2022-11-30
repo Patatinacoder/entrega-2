@@ -11,9 +11,9 @@ const NavBar = () => {
                 <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to='/category/Movies'>Movies</Link>
-                <Link to='/category/Series'>Series</Link>
-                <Link to='/category/Documentals'>Documentals</Link>
+                <Link to='/category/Familiar'>Familiar</Link>
+                <Link to='/category/Love'>Love</Link>
+                <Link to='/category/Action'>Action</Link>
             </li>
 
             <CartWidget />
