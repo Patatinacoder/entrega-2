@@ -9,7 +9,6 @@ const  Ad= ({children})=>{
             justifyContent:'center',
             alignItems:'center',
             top:0,
-            background:'green',
             width:'100vw',
             height:'100vh',
             backgroundColor:'rgba(0,0,0,0,6)',
@@ -21,8 +20,8 @@ const  Ad= ({children})=>{
             flexDirection:'column',
             justifyContent:'center',
             padding:50,
-            width:900,
-            height:500,
+            width:500,
+            height:300,
             backgroundColor:'salmon',
 
           }}  

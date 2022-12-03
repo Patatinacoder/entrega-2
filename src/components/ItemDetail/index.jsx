@@ -1,40 +1,17 @@
-// import { useEffect, useState } from "react";
-// import { useParams } from "react-router";
+import React from 'react'
+//import styles from "./ItemDetail.modules.css"
+import product from "../../data/products"
 
-// export function MovieDetails() {
-//   const {movieId} = useParams();
-//   const [movie, setMovie] = useState(null);
 
-//   useEffect(() => {
-//     ("detail/:id" + movieId).then((data) => {
-//       setMovie(data);
-//     });
-//   }, [movieId]);
+const ItemDetail = ({movie})=>{
+    console.log(movie);
+    return(
+        <div className="ItemDetail">
+            <img src={product.poster} alt="details" />
+            <h1>{product.name}</h1>
+            <button className="btn btn-danger sm-3">Button</button>
+        </div>
+    )
+}
 
-//   if (!movie) {
-//     return null;
-//   }
-
-//   return (
-//     <div >
-//       <img
-        
-//         alt={movie.title}
-//       />
-//       <div >
-//         <p >
-//           <strong>Title:</strong> {movie.title}
-//         </p>
-//         <p>
-//           <strong>Genres:</strong>{" "}
-//           {movie.genres.map((genre) => genre.name).join(", ")}
-//         </p>
-//         <p>
-//           <strong>Description:</strong> {movie.overview}
-//         </p>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default MovieDetails
+export default ItemDetail
