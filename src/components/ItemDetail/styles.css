@@ -1,14 +1,15 @@
-.detailsContainer {
+
+  
+  .col {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .col {
-    max-width: 10000px;
-    margin: 15px;
-    height: auto;
-    width: 80%;
+
+    max-width: 200vh;
+margin: 6%;   
+ height: auto;
+
+    width: 100%;
   }
   
   .movieImage {
@@ -17,9 +18,10 @@
   
   .movieDetails {
     font-size: 1.5rem;
+    margin-left: 6%;
   }
   
   .firstItem {
-    margin-top: 5%;
+    margin-left: 5%;
   }
   
