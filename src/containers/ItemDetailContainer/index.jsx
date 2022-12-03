@@ -1,8 +1,8 @@
 import products from "../../data/products";
 import { useEffect, useState } from "react";
  import {  useParams } from "react-router-dom";
- //import styles from "./ItemDetail.modules.css"
- import ItemDetail from "../../components/ItemDetail";
+// import styles from "./ItemDetail.modules.css"
+import ItemDetail from "../../components/ItemDetail";
 
 
 
@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
             useEffect(() => {
                 const promesa = new Promise((resolve, reject) => {
                     resolve(products);
-                }); 
+                });
                 promesa
                 
                 .then((result)=>{setMovie(result.find(movie=> movie.id === parseInt(id) ))})
@@ -22,14 +22,21 @@ import { useEffect, useState } from "react";
             return (
                
 
-
-        
-               <ItemDetail/> 
+                <ItemDetail movie={movie}/>
 
               
             )
             
             }
+
+                
+          
+
+
+
+
+
+          
 
                 
           
